@@ -1,0 +1,37 @@
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<constant name="struts.objectFactory" value="spring" />
+	
+	<package name="mall" extends="struts-default">
+		<action name="mallUser_*" class="com.supplyplatform.action.MallRegisterAndLoginAction" method="{1}">
+			<result name="register_success">/welcome.jsp</result>
+			<result name="register_error">/error.jsp</result>
+			<result name="login_success">/welcome.jsp</result>
+			<result name="login_error">/error.jsp</result>
+		</action>
+		
+		<action name="commodityType_*" class="com.supplyplatform.action.CommodityTypeManageAction" method="{1}">
+			<result name="commodity_view">/welcome.jsp</result>
+		</action>
+		
+		<action name="commodityManage_*" class="com.supplyplatform.action.CommodityManageAction" method="{1}">
+		</action>
+		
+		<action name="CommodityProperty_*" class="com.supplyplatform.action.CommodityPropertyManageAction" method="{1}">
+		</action>
+		
+	</package>
+	
+	<package name="supermarket" extends="struts-default">
+		<action name="supermarketUser_*" class="com.supplyplatform.action.SupermarketRegisterAndLoginAction" method="{1}">
+			<result name="register_success">/welcome.jsp</result>
+			<result name="register_error">/error.jsp</result>
+			<result name="login_success">/welcome.jsp</result>
+			<result name="login_error">/error.jsp</result>
+		</action>
+	</package>
+	
+</struts>

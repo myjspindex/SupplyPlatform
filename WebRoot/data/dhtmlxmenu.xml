@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<menu>
+	<!--kpicrud-->
+	
+	<item id="muItem_ADD" text="新建" img="new.gif"/>
+	<item type="separator"/>
+	<item id="muItem_EDIT" text="编辑" img="edit.gif"/>
+	<item type="separator"/>
+	<item id="muItem_DELETE" text="删除" img="del.gif"/>
+	<item type="separator"/>
+	<item id="muItem_SEARCH" text="查看商品" img="del.gif"/>
+</menu>

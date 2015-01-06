@@ -1,0 +1,28 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<bean id="commodityTypeRepository" class="com.supplyplatform.repository.impl.CommodityTypeRepositoryImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>  
+	
+	<bean id="orderRepository" class="com.supplyplatform.repository.impl.OrderRepositoryImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>  
+	
+	
+	<bean id="memberRepository" class="com.supplyplatform.repository.impl.MemberRepositoryImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>  
+	
+		
+	<bean id="commodityPropertyRepository" class="com.supplyplatform.repository.impl.CommodityPropertyRepositoryImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>  
+	
+	<bean id="commodityRepository" class="com.supplyplatform.repository.impl.CommodityRepositoryImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean> 	
+	
+</beans>

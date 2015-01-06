@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//WebRoot/index.jsp=UTF-8
+encoding//WebRoot/mall/commodityTypeAdd.jsp=UTF-8
+encoding//WebRoot/mall/login.jsp=UTF-8
+encoding//WebRoot/mall/register.jsp=UTF-8
+encoding//src/com/supplyplatform/action/MallRegisterAndLoginAction.java=UTF-8
+encoding//src/com/supplyplatform/action/SupermarketRegisterAndLoginAction.java=UTF-8
+encoding//src/config/properties/message.properties=UTF-8

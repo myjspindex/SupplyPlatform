@@ -1,0 +1,26 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+    
+    <bean id="commodityTypeManageService" class="com.supplyplatform.service.impl.CommodityTypeManageServiceImpl">
+    	<property name="commodityTypeRepository" ref="commodityTypeRepository"></property>  
+    </bean>  
+    
+     <bean id="orderService" class="com.supplyplatform.service.impl.OrderServiceImpl">
+    	<property name="orderRepository" ref="orderRepository"></property>  
+    </bean>  
+    
+     <bean id="registerAndLoginService" class="com.supplyplatform.service.impl.RegisterAndLoginServiceImpl">
+    	<property name="memberRepository" ref="memberRepository"></property>  
+    </bean>  
+    
+     <bean id="commodityPropertyManageService" class="com.supplyplatform.service.impl.CommodityPropertyManageServiceImpl">
+    	<property name="commodityPropertyRepository" ref="commodityPropertyRepository"></property>  
+    </bean>  
+    
+    <bean id="commodityManageService" class="com.supplyplatform.service.impl.CommodityManageServiceImpl">
+    	<property name="commodityRepository" ref="commodityRepository"></property>  
+    </bean>  
+    
+</beans>

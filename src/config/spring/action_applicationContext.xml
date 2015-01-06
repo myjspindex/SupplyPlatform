@@ -1,0 +1,32 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<bean id="mallRegisterAction" class="com.supplyplatform.action.MallRegisterAndLoginAction">
+		<property name="registerAndLoginService" ref="registerAndLoginService"></property>
+	</bean>
+
+	<bean id="supermarketRegisterAction" class="com.supplyplatform.action.SupermarketRegisterAndLoginAction">
+		<property name="registerAndLoginService" ref="registerAndLoginService"></property>
+	</bean>
+	
+	<bean id="commodityTypeManageAction" class="com.supplyplatform.action.CommodityTypeManageAction">
+		<property name="commodityTypeManageService" ref="commodityTypeManageService"></property>
+		<property name="commodityManageService" ref="commodityManageService"></property>
+	</bean>
+	
+	<bean id="commodityPropertyManageAction" class="com.supplyplatform.action.CommodityPropertyManageAction">
+		<property name="commodityPropertyManageService" ref="commodityPropertyManageService"></property>
+	</bean>	
+	
+	<bean id="cmmodityManageAction" class="com.supplyplatform.action.CommodityManageAction">
+		<property name="commodityManageService" ref="commodityManageService"></property>
+	</bean>	
+	
+	
+	
+	<bean id="commodityTypeTreeDataCreator" class="com.supplyplatform.helper.CommodityTypeTreeXMLDataCreator">
+	</bean>
+		
+</beans>

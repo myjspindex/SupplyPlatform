@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tree id="0">
+	<item text="公司指标分类库" id="ktLab"  >
+	   
+		<item text="财务指标" id="ktEconomy" open="1"  src="http://g.cn">
+		 
+			<item text="日销售额" id="ktDSold" > </item>
+			<item text="月销售额" id="ktMSold" ></item>
+			<item text="季销售额" id="ktQSold" > </item>
+			<item text="年销售额" id="ktYSold" ></item>
+		</item>
+		<item text="经济指标" id="ktProduct" open="true"> 
+			<item text="日产量" id="ktDProduct" > </item>
+			<item text="月产量" id="ktMonthProduct" >  </item>
+			<item text="季产量" id="ktQProduct" >   </item>
+			<item text="年产量" id="ktYProduct" >  </item>
+		</item>
+	</item>	
+</tree> 
+
